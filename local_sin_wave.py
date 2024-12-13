@@ -1,5 +1,4 @@
 import queue
-import socket
 import sounddevice as sd
 from numpy import *
 import numpy as np
@@ -47,7 +46,7 @@ def output_callback(outdata, frames, time, status):
 global sound_done
 
 def Play(data_id: int, time:int):
-    global local_file, sound_done, socket_client
+    global local_file, sound_done
     parser = argparse.ArgumentParser(add_help=False)
     count = 0
     input_id = 0
